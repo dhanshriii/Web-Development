@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<head>
+<title>Registration Form</title>
+
+<style>
+    *{
+    background-color: #EDCBD2;
+    
+    }
+    
+    form{
+        box-shadow: 10px 10px 5px black;
+    border-style: inset;
+    background: #80C4B7;
+    padding: 20px;
+    margin: 40px;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-radius: 20px;
+    
+    
+    }
+    
+    form input{
+        
+        height: 30px;
+        border-radius: 10px;
+    }
+    
+    #button1{
+        font-size: 17px;
+        border: inset;
+        padding: 5px 10px;
+        border-radius: 12px;
+        transition-duration: 0.5s;
+    
+    }
+    #button1:hover{
+        background-color: lightpink;
+    }
+    h1{
+        background-color: transparent;
+    }
+    
+    </style>
+    
+
+<script>
+    function register(){
+        var name = document.getElementById("name").value
+        if(name===""){
+            alert('Please Enter Name');
+            return false;
+        }
+
+        var email = document.getElementById("email").value
+        if(email===""){
+            alert('Please Enter Email');
+            return false;
+        }
+
+        var age = document.getElementById("age").value
+        if(age===""){
+            alert('Please Enter Age');
+            return false;
+        }
+
+        var name = document.getElementById("name").value
+        if(name===""){
+            alert('Please Enter Name');
+            return false;
+        }
+    }
+</script>
+
+
+
+</head>
+
+
+<body >
+    
+    
+<form align = 'center'>
+    <h1 style="color:rgb(69, 90, 113)" align="center">Registration Form</h1><hr><br>
+
+Enter Username:
+<input type="text" name="FULLNAME" placeholder="Enter Your name" id="name"><br><br>
+Enter Password:
+<input type="password" name="password" placeholder="Enter your email" id="email"><br><br>
+Enter Age:
+<input type="number" name="age" min=18 max=25 placeholder="Enter your Age" id="age"><br><br>
+Enter Address:
+<textarea name="address" id="enter your address" rows="4" col="10" placeholder="Enter your Address" id="add"></textarea><br><br>
+SELECT DOB:
+<input type="date" id="dob"><br><br>
+
+Gender:
+<input type="radio" name="Male" value="Male">Male
+<input type="radio" name="Male" value="female">Female
+<br>
+
+Select course:
+<input type="checkbox" name="java" id="java">java
+<input type="checkbox" name=".net" id=".net">.net
+<input type="checkbox" name="angular" id="angular">angular
+<input type="checkbox" name="Reactjs" id="Reactjs">reactjs
+<br>
+
+Select qualification:
+<select qualification="    " id="quali">
+<option value="B.E.">BE</option>
+<option>B.TECH</option>
+<option>MBA</option>
+</select>
+<br>
+
+<br>
+upload file:<input type="file" name="file" id="file">
+<br>
+
+
+<br>
+
+<input id = 'button1' type="submit" onclick=register()>
+<input id = 'button1' type="reset">
+<input id = 'button1' type="button" value="button">
+
+</form>
+</body>
+
+
+
+
+
+</html>
+
+
